@@ -1,6 +1,12 @@
+<<<<<<< HEAD
+# Learning Management System (LMS)
+
+A comprehensive Learning Management System built with Django (Backend) and Flutter (Frontend) that includes all the features of a modern enterprise-level LMS.
+=======
 # AI POWERED Learning Management System (LMS)
 
 A comprehensive Learning Management System built with Django (Backend) , SupaBase Database and Flutter (Frontend  that includes all the features of a modern enterprise-level LMS.
+>>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
 
 ## Features
 
@@ -279,7 +285,17 @@ flutter build ios      # iOS
 flutter build web      # Web
 ```
 
+<<<<<<< HEAD
+## Contributing
 
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a pull request
+=======
+
+>>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
 
 ## License
 
@@ -288,4 +304,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Thanks to all contributors who have helped build this LMS
+<<<<<<< HEAD
 - Inspired by popular LMS platforms like Coursera, Udemy, and edX
+=======
+- Inspired by popular LMS platforms like Coursera, Udemy, and edX
+>>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
