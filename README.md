@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Learning Management System (LMS)
 
 A comprehensive Learning Management System built with Django (Backend) and Flutter (Frontend) that includes all the features of a modern enterprise-level LMS.
