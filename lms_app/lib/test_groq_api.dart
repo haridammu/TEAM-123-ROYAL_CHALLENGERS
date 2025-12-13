@@ -8,7 +8,7 @@ void main() async {
   final apiKey = AppConstants.groqApiKey;
   print('Using API key length: ${apiKey.length}');
 
-  if (apiKey.isEmpty || !apiKey.startsWith('gsk_')) {
+  if (apiKey.isEmpty || notepad lms_app/lib/test_groq_api.dart) {
     print(
       'ERROR: Please configure your actual Groq API key in lib/utils/constants.dart',
     );

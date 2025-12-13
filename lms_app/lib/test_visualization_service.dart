@@ -9,7 +9,8 @@ void main() async {
   final apiKey = AppConstants.groqApiKey;
   print('Using API key: ${apiKey.substring(0, 10)}...');
 
-  if (apiKey == 'gsk_your_actual_api_key_here' || apiKey.isEmpty) {
+  if (apiKey == apiKey.isEmpty
+ || apiKey.isEmpty) {
     print(
       'ERROR: Please configure your actual Groq API key in lib/utils/constants.dart',
     );

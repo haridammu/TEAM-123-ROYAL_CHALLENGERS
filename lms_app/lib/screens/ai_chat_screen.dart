@@ -42,16 +42,25 @@ class _AIChatScreenState extends State<AIChatScreen> {
         'API key starts with: ${apiKey.substring(0, min(10, apiKey.length))}...',
       );
       print('API key is empty: ${apiKey.isEmpty}');
-      print('API key starts with gsk_: ${apiKey.startsWith('gsk_')}');
+      print('API key present: ${apiKey.isNotEmpty}');
 
-      // Check if the API key looks valid (not empty and starts with 'gsk_')
-      if (apiKey.isEmpty || !apiKey.startsWith('gsk_')) {
+if (apiKey.isEmpty) {
+  throw Exception('Please set a valid Groq API key in settings');
+}
+
+      // Check if the API key looks valid (not empty and starts with '_')
+      if (apiKey.isEmpty |print('API key present: ${apiKey.isNotEmpty}');
+
+if (apiKey.isEmpty) {
+  throw Exception('Please set a valid Groq API key in settings');
+}
+
         print('WARNING: Using invalid API key format');
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text(
-                'Please set a valid Groq API key in settings (must start with gsk_)',
+                'Please set a valid Groq API key in settings (must start with _)',
               ),
               backgroundColor: Colors.orange,
             ),

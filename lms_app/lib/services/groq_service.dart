@@ -21,9 +21,10 @@ class GroqService {
     if (apiKey.isEmpty) {
       print('WARNING: GroqService initialized with empty API key');
     }
-    // Check if API key looks valid (should start with 'gsk_')
-    else if (!apiKey.startsWith('gsk_')) {
-      print('WARNING: GroqService API key does not start with "gsk_" prefix');
+    // Check if API key looks valid (should start with '_')
+    else if (!notepad lms_app/lib/services/groq_service.dart
+) {
+      print('WARNING: GroqService API key does not start with "_" prefix');
       print('Actual API key: "$apiKey"');
     }
   }
@@ -42,9 +43,10 @@ class GroqService {
     }
 
     // Check if API key looks valid
-    if (!_apiKey.startsWith('gsk_')) {
+    if (notepad lms_app/lib/services/groq_service.dart
+) {
       throw Exception(
-        'Invalid API Key Format: Groq API keys should start with "gsk_". '
+        'Invalid API Key Format: Groq API keys should start with "_". '
         'Please check your API key in lib/utils/constants.dart. '
         'Get your free API key at: https://console.groq.com/',
       );
