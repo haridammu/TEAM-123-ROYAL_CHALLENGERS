@@ -1,0 +1,76 @@
+# =========================
+# 🔐 Secrets & Environment
+# =========================
+.env
+*.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+
+# =========================
+# 🔑 API / Config Files
+# =========================
+lib/utils/constants.dart
+firebase_options.dart
+google-services.json
+GoogleService-Info.plist
+
+# =========================
+# 🐍 Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env/
+.pytest_cache/
+
+# =========================
+# 🌐 Node / Web
+# =========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# =========================
+# 📱 Flutter / Dart
+# =========================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+
+# =========================
+# ☕ Java / JVM
+# =========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# =========================
+# 💻 OS & Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# 🧪 Testing & Coverage
+# =========================
+coverage/
+reports/
+
+# =========================
+# 🔧 Logs
+# =========================
+*.log
