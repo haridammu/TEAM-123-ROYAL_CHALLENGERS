@@ -1,310 +1,135 @@
-# Learning Management System (LMS)
+# 🧠 AI-LMS: The Future of Recruitment & Learning
 
-A comprehensive Learning Management System built with Django (Backend) and Flutter (Frontend) that includes all the features of a modern enterprise-level LMS.
-=======
-# AI POWERED Learning Management System (LMS)
+**AI-LMS** is a cutting-edge ecosystem designed to bridge the gap between academic learning and corporate hiring. By leveraging **GenAI (Llama-3)**, **Real-time Sockets**, and a **Flutter Multi-App Architecture**, we provide a seamless experience for Students, Companies, and Examiners.
 
-A comprehensive Learning Management System built with Django (Backend) , SupaBase Database and Flutter (Frontend  that includes all the features of a modern enterprise-level LMS.
->>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
+---
 
-## Features
+## 🚀 Key Features Overview
 
-### Authentication & User Management
-- User registration and login
-- Google Sign-In integration
-- Role-based access control (Admin, Instructor, Student, Teaching Assistant)
-- Profile management with streak tracking
-- Security settings with 2FA support
+### 🏢 **Company App (Recruitment Suite)**
+*Transforming how companies hire talent.*
 
-### Core LMS Features
-- Course creation and management
-- Module and lesson organization
-- Video embedding support
-- Enrollment system
-- Progress tracking
-- Certificates generation
+#### **1. Smart Job Management**
+*   **Post Jobs with AI**: Create detailed job listings with rich descriptions, requirements, and salary ranges.
+*   **Stepper Form UI**: Modern, intuitive multi-step form for creating vacancies.
+*   **Real-time Dashboard**: Live counter for **Active Jobs** and **Total Applicants**.
 
-### Advanced Features
-- Quiz and assessment system with multiple question types
-- Assignment tracking with progress indicators
-- Live streaming for examinations
-- Project submission with video recording
-- YouTube video integration
+#### **2. Intelligent Applicant Tracking (ATS)**
+*   **AI Match Score**: Automatically analyzes every applicant's resume against the job description and assigns a **0-100% Fit Score**.
+*   **Applicant Insights**: Visual indicators for "High Match" (Green), "Potential" (Yellow), and "Mismatch" (Red).
+*   **Status Pipeline**: Drag-and-drop style status updates: `Pending` → `Reviewing` → `Interview` → `Hired` → `Rejected`.
 
-### Communication & Social Features
-- Real-time chat (individual and group)
-- Discussion forums
-- Social feed with posts and comments
-- Following system
-- Achievement and badge system
-- Leaderboard rankings
+#### **3. Integrated Interview System**
+*   **One-Click Scheduling**: Schedule interviews directly from the applicant's profile.
+*   **Real-time Notifications**: Trigger instant alerts to the Student App via Socket.IO upon scheduling.
+*   **Video Integration**: (Ready for Agora/Zoom link embedding).
 
-### Gamification
-- Point-based reward system
-- Streak tracking
-- Achievement badges
-- Leaderboards
-- Progress visualization
+#### **4. AI Contest Generator (Killer Feature)**
+*   **Instant Contests**: Ask the AI: *"Create a Hard Dynamic Programming contest with 3 problems"* -> **Done in 10s**.
+*   **Auto-Generated Content**:
+    *   Problem Titles & Descriptions
+    *   Input/Output Formats & Constraints
+    *   Sample Test Cases & Hidden Test Cases
+*   **Global Visibility**: Contests are instantly published to the Student App's "Live" section.
 
-### Payment & Subscription
-- Subscription plans (Basic, Premium)
-- Course purchases
-- Payment processing integration
-- Revenue tracking
+#### **5. Dynamic Branding**
+*   **Company Profile**: Manage Logo, Website, Bio, and Location.
+*   **Instant Updates**: Changes reflect immediately across all Student App pipelines.
 
-### Analytics & Reporting
-- User engagement analytics
-- Course performance reports
-- Financial reporting
-- Data export capabilities
+---
 
-### Security & Privacy
-- Two-factor authentication
-- Privacy controls
-- Data encryption
-- Account deletion
-- Device management
+### 🎓 **Student App (Career & Learning)**
+*Empowering students to learn, compete, and get hired.*
 
-## Technology Stack
+#### **1. AI-Powered Resume Builder**
+*   **Smart Suggestions**: AI helps rephrase experience and skills for better ATS ranking.
+*   **Premium Templates**: Auto-generates clean, professional PDF resumes.
+*   **Structure**: Sections for Education, Projects, Experience, Skills, and Awards.
 
-### Backend (Django)
-- Django 4.2
-- Django REST Framework
-- SQLite (default database)
-- Django CORS Headers
-- PyOTP (for 2FA)
-- QR Code generation
+#### **2. Competitive Programming Arena**
+*   **Live Battles**: Participate in real-time contests hosted by top companies.
+*   **Real-time Leaderboard**: See your rank climb as you solve problems.
+*   **AI Assistant**: In-contest chat bot to clear doubts (e.g., *"Explain this error"* or *"Hint for Problem 2"*).
+*   **AI Proctoring**: Simulated proctoring system that detects tab-switching and suspicious behavior.
+*   **Code Runner**: Integrated **JDoodle** compiler supporting Python, C++, Java, and Dart.
 
-### Frontend (Flutter)
-- Flutter 3.7+
-- Dart 3.7+
-- HTTP Client for API communication
-- WebSocket for real-time features
-- Charts for data visualization
+#### **3. Job Portal**
+*   **Smart Feed**: Jobs recommended based on skills and resume match.
+*   **One-Tap Apply**: Apply instantly using the stored profile.
+*   **Application Tracking**: See exactly where you stand in the hiring pipeline.
 
-## Installation
+#### **4. Learning & Gamification**
+*   **Course Modules**: AI-curated learning paths.
+*   **Achievements**: Badges for "Contest Winner", "Streak Master", etc.
 
-### Backend Setup
+---
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd Lms
-   ```
+### 🛠️ **Backend (The Brain)**
+*   **Node.js & Express**: High-performance RESTful API.
+*   **Supabase (PostgreSQL)**: Relational database for complex data modeling.
+*   **Groq SDK (Llama-3-70b)**: The ultra-fast AI engine behind Contests and Resume Matching.
+*   **Socket.IO**: Real-time bi-directional communication for notifications and contest updates.
+*   **JDoodle API**: Remote code execution engine.
 
-2. Create a virtual environment:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+---
 
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+## � Tech Stack Details
 
-4. Run migrations:
-   ```
-   python manage.py migrate
-   ```
+| Component | Tech |
+| :--- | :--- |
+| **Mobile Apps** | **Flutter 3.x** (Dart) |
+| **State Mgmt** | Riverpod |
+| **Navigation** | GoRouter |
+| **UI/UX** | Glassmorphism, Flutter Animate, Google Fonts (Outfit) |
+| **Backend** | **Node.js**, Express.js |
+| **Database** | **Supabase** (Postgres) |
+| **AI Model** | **Llama-3-70b** (via Groq) |
+| **Real-time** | **Socket.IO** |
 
-5. Create a superuser:
-   ```
-   python manage.py createsuperuser
-   ```
+---
 
-6. Start the development server:
-   ```
-   python manage.py runserver
-   ```
+## ⚡ Deployment & Setup
 
-### Frontend Setup
-
-1. Navigate to the Flutter app directory:
-   ```
-   cd lms_app
-   ```
-
-2. Install dependencies:
-   ```
-   flutter pub get
-   ```
-
-3. **Supabase Configuration** (IMPORTANT):
-   - Follow the instructions in `SUPABASE_SETUP_INSTRUCTIONS.md`
-   - Update your Supabase URL and anon key in `lib/services/supabase_auth_service.dart`
-   - Run the database setup script in your Supabase project
-
-4. Run the app:
-   ```
-   flutter run
-   ```
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register/` - User registration (Django backend)
-- `POST /api/auth/login/` - User login (Django backend)
-- `POST /api/auth/google-login/` - Google Sign-In (Django backend)
-- `POST /api/auth/logout/` - User logout (Django backend)
-- `GET /api/auth/profile/` - Get user profile (Django backend)
-- `PUT /api/auth/profile/update/` - Update user profile (Django backend)
-
-**Note**: The application now also supports Supabase authentication. See `lib/services/supabase_auth_service.dart` for the Supabase implementation.
-
-### Courses
-- `GET /api/courses/` - List all courses
-- `GET /api/courses/{id}/` - Get course details
-- `POST /api/courses/` - Create a course (Admin only)
-- `PUT /api/courses/{id}/` - Update a course (Admin only)
-- `DELETE /api/courses/{id}/` - Delete a course (Admin only)
-
-### Modules and Lessons
-- `GET /api/courses/modules/` - List modules
-- `GET /api/courses/lessons/` - List lessons
-- `POST /api/courses/modules/` - Create a module (Instructor only)
-- `POST /api/courses/lessons/` - Create a lesson (Instructor only)
-
-### Enrollments
-- `GET /api/courses/enrollments/` - List user enrollments
-- `POST /api/courses/enroll/` - Enroll in a course
-- `DELETE /api/courses/unenroll/{id}/` - Unenroll from a course
-
-### Quizzes
-- `GET /api/quizzes/` - List quizzes
-- `GET /api/quizzes/{id}/` - Get quiz details
-- `POST /api/quizzes/` - Create a quiz (Instructor only)
-- `GET /api/quizzes/questions/` - List questions
-- `GET /api/quizzes/choices/` - List choices
-- `POST /api/quizzes/attempts/` - Start quiz attempt
-- `POST /api/quizzes/answers/` - Submit answer
-- `PATCH /api/quizzes/attempts/{id}/` - Complete quiz attempt
-
-### Chat
-- `GET /api/chat/rooms/` - List chat rooms
-- `GET /api/chat/messages/` - List messages
-- `POST /api/chat/messages/` - Send a message
-- `GET /api/chat/private-chats/` - List private chats
-- `GET /api/chat/private-messages/` - List private messages
-- `POST /api/chat/private-messages/` - Send a private message
-
-### Social
-- `GET /api/social/posts/` - List posts
-- `POST /api/social/posts/` - Create a post
-- `POST /api/social/posts/{id}/like/` - Like a post
-- `POST /api/social/posts/{id}/unlike/` - Unlike a post
-- `GET /api/social/comments/` - List comments
-- `POST /api/social/comments/` - Create a comment
-- `GET /api/social/achievements/` - List achievements
-- `GET /api/social/leaderboard/` - Get leaderboard
-
-### Payments
-- `GET /api/payments/plans/` - List subscription plans
-- `GET /api/payments/subscriptions/` - List user subscriptions
-- `POST /api/payments/subscriptions/` - Subscribe to a plan
-- `GET /api/payments/history/` - Get payment history
-- `POST /api/payments/process/` - Process a payment
-
-### Analytics
-- `GET /api/analytics/user-activity/` - Get user activity
-- `GET /api/analytics/course-progress/` - Get course progress
-- `GET /api/analytics/quiz-analytics/` - Get quiz analytics
-- `GET /api/analytics/engagement-metrics/` - Get engagement metrics
-- `GET /api/analytics/system-performance/` - Get system performance
-
-## Project Structure
-
-### Backend (Django)
-```
-Lms/
-├── Lms/                 # Project settings
-├── authentication/      # User authentication and profiles
-├── courses/            # Course, module, lesson management
-├── quizzes/            # Quiz and assessment system
-├── chat/               # Chat and messaging system
-├── social/             # Social features and community
-├── payments/           # Payment and subscription system
-├── analytics/          # Analytics and reporting
-├── manage.py           # Django management script
-└── requirements.txt    # Python dependencies
+### **1. Backend Server**
+```bash
+cd backend
+npm install
+# Configure .env:
+# SUPABASE_URL=...
+# SUPABASE_SERVICE_KEY=...
+# GROQ_API_KEY=...
+# JDOODLE_CLIENT_ID=...
+# JDOODLE_CLIENT_SECRET=...
+npm start
 ```
 
-### Frontend (Flutter)
-```
-lms_app/
-├── lib/
-│   ├── models/         # Data models
-│   ├── screens/        # UI screens
-│   ├── services/       # API services
-│   ├── widgets/        # Reusable UI components
-│   └── main.dart       # Entry point
-├── pubspec.yaml        # Flutter dependencies
-└── README.md           # Flutter app documentation
+### **2. Company App**
+```bash
+cd company_app
+flutter pub get
+flutter run
 ```
 
-## Testing
-
-### Backend Testing
-Run Django tests:
-```
-python manage.py test
-```
-
-### Frontend Testing
-Run Flutter tests:
-```
-flutter test
+### **3. Student App**
+```bash
+cd . # Root directory
+flutter pub get
+flutter run
 ```
 
-## Deployment
+---
 
-### Backend Deployment
-1. Set environment variables:
-   ```
-   SECRET_KEY=your-secret-key
-   DEBUG=False
-   ALLOWED_HOSTS=your-domain.com
-   ```
+## 🌟 How to Demo "The Full Flow"
 
-2. Collect static files:
-   ```
-   python manage.py collectstatic
-   ```
+1.  **Recruiter**: Login to Company App -> **Dashboard** -> **AI Contests**.
+2.  **Action**: Create a "Python Lists" contest (Medium difficulty).
+3.  **Result**: Watch the AI generate problems. It appears in the list.
+4.  **Student**: Login to Student App -> **Contests**.
+5.  **Action**: See the "Live" contest. Open it.
+6.  **Recruiter**: Go to **My Jobs**. View an Applicant.
+7.  **Action**: Click "Schedule Interview".
+8.  **Student**: Receive a **Notification**: *"Interview Scheduled!"*
 
-3. Use a WSGI server like Gunicorn:
-   ```
-   gunicorn Lms.wsgi:application
-   ```
+---
 
-### Frontend Deployment
-Build the Flutter app for your target platform:
-```
-flutter build apk      # Android
-flutter build ios      # iOS
-flutter build web      # Web
-```
-
-<<<<<<< HEAD
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a pull request
-=======
-
->>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Thanks to all contributors who have helped build this LMS
-<<<<<<< HEAD
-- Inspired by popular LMS platforms like Coursera, Udemy, and edX
-=======
-- Inspired by popular LMS platforms like Coursera, Udemy, and edX
->>>>>>> 59185188576a4d1f6ef7a183291e2bbc2e860993
+*AI-LMS: Closing the loop between Education and Employment.*
